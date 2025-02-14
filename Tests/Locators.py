@@ -34,3 +34,5 @@ class Locator:
     button_exit_from_account = (By.XPATH, '//*[@id="root"]/div/main/div/nav/ul/li[3]/button')
     #Ошибка при вводе неверного пароля
     invalid_password = (By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[2]/div/p')
+    #Проверка текста Вход (Проверка выхода из аккаунта)
+    text_enter_in_account = (By.XPATH, '//*[@id="root"]/div/main/div/h2')
