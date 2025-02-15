@@ -8,8 +8,10 @@ class Locator:
     email_field = (By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[2]/div/div/input')
     #Поле Пароль
     password_field = (By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[3]/div/div/input')
-    #Кнопка Зарегистрироваться
-    button_registration = (By.XPATH, '//*[@id="root"]/div/main/div/div/p[1]/a')
+    #Кнопка Зарегистрироваться (после ввода данных в поля Имя, почта, пароль)
+    button_registration = (By.XPATH, '//*[@id="root"]/div/main/div/form/button')
+    # Активная надпись Зарегистрироваться (Новый пользователь)
+    sign_registration = (By.XPATH,'//*[@id="root"]/div/main/div/div/p[1]/a')
 
     #Кнопка "Личный кабинет"
     button_personal_account = (By.XPATH, '//*[@id="root"]/div/header/nav/a/p')
@@ -40,7 +42,7 @@ class Locator:
     text_profile_in_personal_account = (By.XPATH, '//*[@id="root"]/div/main/div/nav/ul/li[1]/a')
     #Проверка перехода по кнопке Конструктор текстом "Соберите бургер"
     text_in_page_constructor= (By.XPATH, '//*[@id="root"]/div/main/section[1]/h1')
-    #Проверка перехода по кнопке Логотипа текстом "Оформить заказ"
+    #Проверка перехода по кнопке Логотипа - текстом "Оформить заказ"
     text_in_main_page = (By.XPATH, '//*[@id="root"]/div/main/section[2]/div/button')
     #Выбранная секция в конструкторе
     choose_section_of_item = (By.XPATH, "//*[contains(@class, 'tab_tab_type_current')]")
