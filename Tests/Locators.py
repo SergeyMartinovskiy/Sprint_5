@@ -20,8 +20,10 @@ class Locator:
     #Кнопка Войти
     button_enter = (By.XPATH, '//*[@id="root"]/div/main/div/form/button')
 
-    #Кнопка Восстановить пароль
-    button_recovery_password = (By.XPATH, '//*[@id="root"]/div/main/div/div/p[2]/a')
+    #Активная надпись Восстановить пароль
+    sign_recovery_password = (By.XPATH, '//*[@id="root"]/div/main/div/div/p[2]/a')
+    #Кнопка Восставноить пароль после ввода пароля
+    button_recovery_password = (By.XPATH, '//*[@id="root"]/div/main/div/form/button')
     #Кнопка перехода Конструктор
     button_constructor = (By.XPATH, '//*[@id="root"]/div/header/nav/ul/li[1]/a/p')
     #Кнопка Логотип Stellar Burgers
@@ -52,3 +54,5 @@ class Locator:
     text_topping_in_scroll = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[3]')
     #Текст Хлеб на странице выбора вариантов Хлеба (Конструктор)
     text_bread_in_scroll = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[1]')
+    #Кнопка пересохранения пароля
+    button_resave_password = (By.XPATH, '//*[@id="root"]/div/main/div/form/button')
