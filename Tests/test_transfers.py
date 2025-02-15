@@ -31,3 +31,8 @@ class TestTransfers:
         general_settings.find_element(*Locator.password_field).send_keys(password)
         general_settings.find_element(*Locator.button_enter).click()
         general_settings.find_element(*Locator.button_personal_account).click()
+        general_settings.find_element(*Locator.logo_stella_burgers).click()
+        checking_text_main_page = general_settings.find_element(*Locator.text_in_main_page).text
+        WebDriverWait(general_settings, 3).until(expected_conditions.element_to_be_clickable(checking_text_main_page))
+        assert checking_text_main_page == 'Оформите заказ'
+

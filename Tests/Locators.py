@@ -40,3 +40,5 @@ class Locator:
     text_profile_in_personal_account = (By.XPATH, '//*[@id="root"]/div/main/div/nav/ul/li[1]/a')
     #Проверка перехода по кнопке Конструктор текстом "Соберите бургер"
     text_in_page_constructor= (By.XPATH, '//*[@id="root"]/div/main/section[1]/h1')
+    #Проверка перехода по кнопке Логотипа текстом "Оформить заказ"
+    text_in_main_page = (By.XPATH, '//*[@id="root"]/div/main/section[2]/div/button')
