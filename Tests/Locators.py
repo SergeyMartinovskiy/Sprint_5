@@ -36,3 +36,7 @@ class Locator:
     invalid_password = (By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[2]/div/p')
     #Проверка текста Вход (Проверка выхода из аккаунта)
     text_enter_in_account = (By.XPATH, '//*[@id="root"]/div/main/div/h2')
+    #Проверка перехода в личный кабинет через текст "Профиль" на странице Личного кабинета
+    text_profile_in_personal_account = (By.XPATH, '//*[@id="root"]/div/main/div/nav/ul/li[1]/a')
+    #Проверка перехода по кнопке Конструктор текстом "Соберите бургер"
+    text_in_page_constructor= (By.XPATH, '//*[@id="root"]/div/main/section[1]/h1')
