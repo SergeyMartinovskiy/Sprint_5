@@ -29,7 +29,7 @@ class Locator:
     #Кнопка перехода - Соусы
     button_sauce = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[2]/span')
     #Кнопка перехода - Начинки
-    button_filling = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[3]/span')
+    button_topping = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[3]/span')
     #Кнопка Выхода из аккаунта
     button_exit_from_account = (By.XPATH, '//*[@id="root"]/div/main/div/nav/ul/li[3]/button')
     #Ошибка при вводе неверного пароля
@@ -44,5 +44,9 @@ class Locator:
     text_in_main_page = (By.XPATH, '//*[@id="root"]/div/main/section[2]/div/button')
     #Выбранная секция в конструкторе
     choose_section_of_item = (By.XPATH, "//*[contains(@class, 'tab_tab_type_current')]")
-    #Текст
+    #Текст Соус на странице выбора вариантов Соуса (Конструктор)
     text_sauce_in_scroll = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[2]/span')
+    #Текст Начинки на странице выбора вариантов начинок (Конструктор)
+    text_topping_in_scroll = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[3]')
+    #Текст Хлеб на странице выбора вариантов Хлеба (Конструктор)
+    text_bread_in_scroll = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[1]')

@@ -25,7 +25,7 @@ class TestMainTransfers:
         WebDriverWait(general_settings, 3).until(expected_conditions.element_to_be_clickable(checking_text_constructor_page))
         assert checking_text_constructor_page == 'Соберите бургер'
 
-    def test_transfer_click_on_logo_stella (self, general_settings):
+    def test_transfer_click_on_logo_stella_burgers (self, general_settings):
         general_settings.find_element(*Locator.button_personal_account).click()
         general_settings.find_element(*Locator.email_field).send_keys(email)
         general_settings.find_element(*Locator.password_field).send_keys(password)
