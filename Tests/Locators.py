@@ -56,3 +56,4 @@ class Locator:
     text_bread_in_scroll = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[1]')
     #Кнопка пересохранения пароля
     button_resave_password = (By.XPATH, '//*[@id="root"]/div/main/div/form/button')
+    #Некорректный пароль
