@@ -42,3 +42,7 @@ class Locator:
     text_in_page_constructor= (By.XPATH, '//*[@id="root"]/div/main/section[1]/h1')
     #Проверка перехода по кнопке Логотипа текстом "Оформить заказ"
     text_in_main_page = (By.XPATH, '//*[@id="root"]/div/main/section[2]/div/button')
+    #Выбранная секция в конструкторе
+    choose_section_of_item = (By.XPATH, "//*[contains(@class, 'tab_tab_type_current')]")
+    #Текст
+    text_sauce_in_scroll = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[2]/span')

@@ -3,7 +3,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from my_data import *
 
-class TestTransfers:
+class TestMainTransfers:
     def test_transfer_in_main_page(self,general_settings):
         general_settings.find_element(*Locator.button_personal_account).click()
         general_settings.find_element(*Locator.email_field).send_keys(email)
