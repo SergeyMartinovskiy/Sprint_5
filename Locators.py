@@ -3,11 +3,11 @@ from selenium.webdriver.common.by import By
 class Locator:
     #Регистрация
     #Поле Имя
-    name_field = (By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[1]/div/div/input')
+    name_field = (By.XPATH, './/input[@name='name']')
     #Поле Email
-    email_field = (By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[2]/div/div/input')
+    email_field = (By.XPATH, './/label[text()='Email']/input[@class ='text input__textfield text_type_main-default']')
     #Поле Пароль
-    password_field = (By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[3]/div/div/input')
+    password_field = (By.XPATH, './/input[@name='Пароль']')
     #Кнопка Зарегистрироваться (после ввода данных в поля Имя, почта, пароль)
     button_registration = (By.XPATH, '//*[@id="root"]/div/main/div/form/button')
     # Активная надпись Зарегистрироваться (Новый пользователь)
