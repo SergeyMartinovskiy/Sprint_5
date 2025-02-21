@@ -1,5 +1,6 @@
 from Locators import Locator
 from my_data import *
+from conftest import general_settings
 
 class TestRegistration:
     def test_succesful_registration (self, general_settings):

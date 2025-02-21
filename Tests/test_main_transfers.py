@@ -2,6 +2,7 @@ from Locators import Locator
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from my_data import *
+from conftest import general_settings
 
 class TestMainTransfers:
     def test_transfer_in_main_page_to_personal_page(self,general_settings):

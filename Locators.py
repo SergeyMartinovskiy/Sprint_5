@@ -3,9 +3,9 @@ from selenium.webdriver.common.by import By
 class Locator:
     #Регистрация
     #Поле Имя
-    name_field = (By.XPATH, ".//input[@name='name']")
+    name_field = (By.XPATH, "(//input[@name='name'])[1]")
     #Поле Email
-    email_field = (By.XPATH, ".//label[text()='Email']/input[@class ='text input__textfield text_type_main-default']")
+    email_field = (By.XPATH, ".//label[text()='Email']/following-sibling::input")
     #Поле Пароль
     password_field = (By.XPATH, ".//input[@name='Пароль']")
     #Кнопка Зарегистрироваться (после ввода данных в поля Имя, почта, пароль)
