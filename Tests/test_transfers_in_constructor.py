@@ -1,5 +1,5 @@
 from Locators import Locator
-from conftest import general_settings
+
 
 
 

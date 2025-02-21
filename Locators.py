@@ -9,16 +9,16 @@ class Locator:
     #Поле Пароль
     password_field = (By.XPATH, ".//input[@name='Пароль']")
     #Кнопка Зарегистрироваться (после ввода данных в поля Имя, почта, пароль)
-    button_registration = (By.XPATH, '//*[@id="root"]/div/main/div/form/button')
+    button_registration = (By.XPATH, '//button[text() = "Зарегистрироваться"]')
     # Активная надпись Зарегистрироваться (Новый пользователь)
     sign_registration = (By.XPATH,'//*[@id="root"]/div/main/div/div/p[1]/a')
 
     #Кнопка "Личный кабинет"
-    button_personal_account = (By.XPATH, '//*[@id="root"]/div/header/nav/a/p')
+    button_personal_account = (By.XPATH, '//p[contains(text(),"Личный Кабинет")]')
     #Кнопка "Войти в аккаунт"
     button_enter_to_account = (By.XPATH, '//*[@id="root"]/div/main/section[2]/div/button')
     #Кнопка Войти
-    button_enter = (By.XPATH, '//*[@id="root"]/div/main/div/form/button')
+    button_enter = (By.XPATH, './/button[contains(text(),"Войти")]')
 
     #Активная надпись Восстановить пароль
     sign_recovery_password = (By.XPATH, '//*[@id="root"]/div/main/div/div/p[2]/a')
@@ -39,9 +39,9 @@ class Locator:
     #Ошибка при вводе неверного пароля
     invalid_password = (By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[2]/div/p')
     #Проверка текста Вход (Проверка выхода из аккаунта)
-    text_enter_in_account = (By.XPATH, '//*[@id="root"]/div/main/div/h2')
+    text_enter_in_account = (By.XPATH, '//h2[text()="Вход"]')
     #Проверка перехода в личный кабинет через текст "Профиль" на странице Личного кабинета
-    text_profile_in_personal_account = (By.XPATH, '//*[@id="root"]/div/main/div/nav/ul/li[1]/a')
+    text_in_personal_account = (By.XPATH, '//*[@id="root"]/div/main/div/nav/p')
     #Проверка перехода по кнопке Конструктор текстом "Соберите бургер"
     text_in_page_constructor= (By.XPATH, '//*[@id="root"]/div/main/section[1]/h1')
     #Проверка перехода по кнопке Логотипа - текстом "Оформить заказ"

@@ -2,7 +2,7 @@ from Locators import Locator
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from my_data import *
-from conftest import general_settings
+
 
 class TestOutAccount:
     def test_log_out_account(self,general_settings):
