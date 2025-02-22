@@ -27,7 +27,7 @@ class Locator:
     #Кнопка перехода Конструктор
     button_constructor = (By.XPATH, '//*[@id="root"]/div/header/nav/ul/li[1]/a/p')
     #Кнопка Логотип Stellar Burgers
-    logo_stella_burgers = (By.XPATH, '//*[@id="root"]/div/header/nav/div/a/svg/path[6]')
+    logo_stella_burgers = (By.XPATH, '//div[@class="AppHeader_header__logo__2D0X2"]//a//*[name()="svg"]')
     #Кнопка перехода - Булки
     button_bread = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[1]/span')
     #Кнопка перехода - Соусы
@@ -41,11 +41,11 @@ class Locator:
     #Проверка текста Вход (Проверка выхода из аккаунта)
     text_enter_in_account = (By.XPATH, '//h2[text()="Вход"]')
     #Проверка перехода в личный кабинет через текст "Профиль" на странице Личного кабинета
-    text_in_personal_account = (By.XPATH, '//*[@id="root"]/div/main/div/nav/p')
+    text_in_personal_account = (By.XPATH, './/p[@class="Account_text__fZAIn text text_type_main-default"]')
     #Проверка перехода по кнопке Конструктор текстом "Соберите бургер"
-    text_in_page_constructor= (By.XPATH, '//*[@id="root"]/div/main/section[1]/h1')
+    text_in_page_constructor= (By.XPATH, '//h1[contains(text(),"Соберите бургер")]')
     #Проверка перехода по кнопке Логотипа - текстом "Оформить заказ"
-    text_in_main_page = (By.XPATH, '//*[@id="root"]/div/main/section[2]/div/button')
+    text_in_main_page = (By.XPATH, '//button[contains(text(),"Оформить заказ")]')
     #Выбранная секция в конструкторе
     choose_section_of_item = (By.XPATH, "//*[contains(@class, 'tab_tab_type_current')]")
     #Текст Соус на странице выбора вариантов Соуса (Конструктор)
