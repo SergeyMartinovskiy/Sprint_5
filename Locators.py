@@ -37,7 +37,7 @@ class Locator:
     #Кнопка Выхода из аккаунта
     button_exit_from_account = (By.XPATH, './/button[contains(text(),"Выход")]')
     #Ошибка при вводе неверного пароля
-    invalid_password = (By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[2]/div/p')
+    text_invalid_password = (By.XPATH, './/p[@class="input__error text_type_main-default"]')
     #Проверка текста Вход (Проверка выхода из аккаунта)
     text_enter_in_account = (By.XPATH, './/h2[contains(text(),"Вход")]')
     #Проверка перехода в личный кабинет через текст "Профиль" на странице Личного кабинета
