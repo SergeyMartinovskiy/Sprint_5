@@ -35,11 +35,11 @@ class Locator:
     #Кнопка перехода - Начинки
     button_topping = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[3]/span')
     #Кнопка Выхода из аккаунта
-    button_exit_from_account = (By.XPATH, '//*[@id="root"]/div/main/div/nav/ul/li[3]/button')
+    button_exit_from_account = (By.XPATH, './/button[contains(text(),"Выход")]')
     #Ошибка при вводе неверного пароля
     invalid_password = (By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[2]/div/p')
     #Проверка текста Вход (Проверка выхода из аккаунта)
-    text_enter_in_account = (By.XPATH, '//h2[text()="Вход"]')
+    text_enter_in_account = (By.XPATH, './/h2[contains(text(),"Вход")]')
     #Проверка перехода в личный кабинет через текст "Профиль" на странице Личного кабинета
     text_in_personal_account = (By.XPATH, './/p[@class="Account_text__fZAIn text text_type_main-default"]')
     #Проверка перехода по кнопке Конструктор текстом "Соберите бургер"

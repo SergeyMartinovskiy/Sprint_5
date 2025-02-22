@@ -1,8 +1,6 @@
 from Locators import Locator
 
 
-
-
 class TestTransfersInConstructorPage:
     def test_transfer_click_on_sauce_button (self, general_settings):
         general_settings.find_element(*Locator.button_sauce).click()
