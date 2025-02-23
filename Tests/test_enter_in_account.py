@@ -9,10 +9,9 @@ class TestEnterLInLoginPage:
         general_settings.find_element(*Locator.email_field).send_keys(email)
         general_settings.find_element(*Locator.password_field).send_keys(password)
         general_settings.find_element(*Locator.button_enter).click()
-        general_settings.find_element(*Locator.button_personal_account).click()
+        WebDriverWait(general_settings, 3).until(expected_conditions.visibility_of_element_located(Locator.text_in_main_page))
         checking_text_main_page = general_settings.find_element(*Locator.text_in_main_page).text
-        WebDriverWait(general_settings, 3).until(expected_conditions.element_to_be_clickable(checking_text_main_page))
-        assert checking_text_main_page == 'Оформите заказ'
+        assert checking_text_main_page == 'Оформить заказ'
 
     def test_login_through_button_personal_account (self, general_settings):
         general_settings.find_element(*Locator.button_personal_account).click()
