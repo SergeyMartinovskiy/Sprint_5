@@ -19,6 +19,8 @@ class Locator:
     button_enter_to_account = (By.XPATH, '//*[@id="root"]/div/main/section[2]/div/button')
     #Кнопка Войти
     button_enter = (By.XPATH, './/button[contains(text(),"Войти")]')
+    #Активная надпись Войти на странице восстановления пароля
+    button_enter_in_recovery_page = (By.XPATH, './/a[contains(text(),"Войти")]')
 
     #Активная надпись Восстановить пароль
     sign_recovery_password = (By.XPATH, '//*[@id="root"]/div/main/div/div/p[2]/a')
