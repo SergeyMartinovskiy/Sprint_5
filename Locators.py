@@ -11,31 +11,31 @@ class Locator:
     #Кнопка Зарегистрироваться (после ввода данных в поля Имя, почта, пароль)
     button_registration = (By.XPATH, '//button[text() = "Зарегистрироваться"]')
     # Активная надпись Зарегистрироваться (Новый пользователь)
-    sign_registration = (By.XPATH,'//*[@id="root"]/div/main/div/div/p[1]/a')
+    sign_registration = (By.XPATH,'.//a[contains(text(),"Зарегистрироваться")]')
 
     #Кнопка "Личный кабинет"
     button_personal_account = (By.XPATH, '//p[contains(text(),"Личный Кабинет")]')
     #Кнопка "Войти в аккаунт"
-    button_enter_to_account = (By.XPATH, '//*[@id="root"]/div/main/section[2]/div/button')
+    button_enter_to_account = (By.XPATH, './/button[contains(text(),"Войти в аккаунт")]')
     #Кнопка Войти
     button_enter = (By.XPATH, './/button[contains(text(),"Войти")]')
     #Активная надпись Войти на странице восстановления пароля
     button_enter_in_recovery_page = (By.XPATH, './/a[contains(text(),"Войти")]')
 
     #Активная надпись Восстановить пароль
-    sign_recovery_password = (By.XPATH, '//*[@id="root"]/div/main/div/div/p[2]/a')
+    sign_recovery_password = (By.XPATH, './/a[contains(text(),"Восстановить пароль")]')
     #Кнопка Восставноить пароль после ввода пароля
-    button_recovery_password = (By.XPATH, '//*[@id="root"]/div/main/div/form/button')
+    button_recovery_password = (By.XPATH, './/button[contains(text(),"Восстановить")]')
     #Кнопка перехода Конструктор
-    button_constructor = (By.XPATH, '//*[@id="root"]/div/header/nav/ul/li[1]/a/p')
+    button_constructor = (By.XPATH, './/p[contains(text(),"Конструктор")]')
     #Кнопка Логотип Stellar Burgers
-    logo_stella_burgers = (By.XPATH, '//div[@class="AppHeader_header__logo__2D0X2"]//a//*[name()="svg"]')
+    logo_stella_burgers = (By.XPATH, './/div[@class="AppHeader_header__logo__2D0X2"]//a//*[name()="svg"]')
     #Кнопка перехода - Булки
-    button_bread = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[1]/span')
+    button_bread = (By.XPATH, './/span[contains(text(),"Булки")]')
     #Кнопка перехода - Соусы
-    button_sauce = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[2]/span')
+    button_sauce = (By.XPATH, './/span[contains(text(),"Соусы")]')
     #Кнопка перехода - Начинки
-    button_topping = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[3]/span')
+    button_topping = (By.XPATH, './/span[contains(text(),"Начинки")]')
     #Кнопка Выхода из аккаунта
     button_exit_from_account = (By.XPATH, './/button[contains(text(),"Выход")]')
     #Ошибка при вводе неверного пароля
@@ -51,11 +51,10 @@ class Locator:
     #Выбранная секция в конструкторе
     choose_section_of_item = (By.XPATH, "//*[contains(@class, 'tab_tab_type_current')]")
     #Текст Соус на странице выбора вариантов Соуса (Конструктор)
-    text_sauce_in_scroll = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[2]/span')
+    text_sauce_in_scroll = (By.XPATH, './/h2[contains(text(),"Соусы")]')
     #Текст Начинки на странице выбора вариантов начинок (Конструктор)
-    text_topping_in_scroll = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[3]')
-    #Текст Хлеб на странице выбора вариантов Хлеба (Конструктор)
-    text_bread_in_scroll = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[1]')
+    text_topping_in_scroll = (By.XPATH, './/h2[contains(text(),"Начинки")]')
+    #Текст Булки на странице выбора вариантов Булок (Конструктор)
+    text_bread_in_scroll = (By.XPATH, './/h2[contains(text(),"Булки")]')
     #Кнопка пересохранения пароля
-    button_resave_password = (By.XPATH, '//*[@id="root"]/div/main/div/form/button')
-    #Некорректный пароль
+
